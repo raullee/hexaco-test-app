@@ -1,0 +1,41 @@
+{
+  "start_test": "Start Test",
+  "question_of": "Question {{current}} of {{total}}",
+  "results": "Results",
+  "restart_test": "Restart Test",
+  "personality_snapshot": "Your Personality Snapshot",
+  "get_full_report": "Get My Full Report",
+  "unlock_potential": "Unlock Your Full Potential",
+  "transformation_begins": "You've seen a glimpse of what you can learn. Our full report is where the real transformation begins.",
+  "full_report_tier": "The Full Report",
+  "report_price": "$47",
+  "report_features": [
+    "In-depth HEXACO Analysis",
+    "\"Unknown Knowns\" Insights",
+    "Career & Relationship Blind Spots"
+  ],
+  "choose_plan": "Choose This Plan",
+  "best_value": "Best Value",
+  "report_action_plan_tier": "Report + Action Plan",
+  "action_plan_price": "$77",
+  "action_plan_features": [
+    "Everything in the Full Report, plus:",
+    "Personalized Action Plan",
+    "Leverage Your Strengths Guide"
+  ],
+  "timer_text": "Special introductory price ends in:",
+  "instructions": "Please answer all 60 questions. There are no right or wrong answers. Describe yourself as you generally are now, not as you wish to be. Read each statement carefully and select the option that best describes you. Response scale: 1 = strongly disagree, 2 = disagree, 3 = neutral (neither agree nor disagree), 4 = agree, 5 = strongly agree.",
+  "hexaco_title": "HEXACO Personality Test",
+  "hook_intro": "Your results show a fascinating combination of traits. For example, your high score in {{highestDomain}} suggests you are exceptionally good at navigating complex social situations, yet your score in {{lowestDomain}} indicates a potential blind spot when it comes to long-term planning.",
+  "hook_glimpse": "This is just a glimpse. Your full report will reveal the unknown knowns – the surprising ways these traits interact to shape your career, relationships, and private world.",
+  "hook_unlock": "Unlock your full potential. Discover the real you.",
+  "chart_title": "HEXACO Personality Results",
+  "score_label": "Score",
+  "response_options": {
+    "strongly_disagree": "Strongly Disagree",
+    "disagree": "Disagree",
+    "neutral": "Neutral",
+    "agree": "Agree",
+    "strongly_agree": "Strongly Agree"
+  }
+}

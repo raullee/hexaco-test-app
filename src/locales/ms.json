@@ -1,0 +1,41 @@
+{
+  "start_test": "Mulakan Ujian",
+  "question_of": "Soalan {{current}} daripada {{total}}",
+  "results": "Keputusan",
+  "restart_test": "Ulang Ujian",
+  "personality_snapshot": "Gambaran Personaliti Anda",
+  "get_full_report": "Dapatkan Laporan Penuh Saya",
+  "unlock_potential": "Buka Potensi Penuh Anda",
+  "transformation_begins": "Anda telah melihat sekilas apa yang boleh anda pelajari. Laporan penuh kami adalah di mana transformasi sebenar bermula.",
+  "full_report_tier": "Laporan Penuh",
+  "report_price": "$47",
+  "report_features": [
+    "Analisis HEXACO Mendalam",
+    "Wawasan \"Yang Tidak Diketahui\"",
+    "Titik Buta Kerjaya & Perhubungan"
+  ],
+  "choose_plan": "Pilih Pelan Ini",
+  "best_value": "Nilai Terbaik",
+  "report_action_plan_tier": "Laporan + Pelan Tindakan",
+  "action_plan_price": "$77",
+  "action_plan_features": [
+    "Semua dalam Laporan Penuh, ditambah:",
+    "Pelan Tindakan Peribadi",
+    "Panduan Memanfaatkan Kekuatan Anda"
+  ],
+  "timer_text": "Harga pengenalan istimewa tamat dalam:",
+  "instructions": "Sila jawab semua 60 soalan. Tiada jawapan yang betul atau salah. Gambarkan diri anda secara amnya sekarang, bukan seperti yang anda harapkan. Baca setiap pernyataan dengan teliti dan pilih pilihan yang paling menggambarkan diri anda. Skala respons: 1 = sangat tidak setuju, 2 = tidak setuju, 3 = neutral (tidak setuju atau tidak setuju), 4 = setuju, 5 = sangat setuju.",
+  "hexaco_title": "Ujian Personaliti HEXACO",
+  "hook_intro": "Keputusan anda menunjukkan gabungan sifat yang menarik. Contohnya, skor tinggi anda dalam {{highestDomain}} menunjukkan anda sangat baik dalam mengemudi situasi sosial yang kompleks, namun skor anda dalam {{lowestDomain}} menunjukkan potensi titik buta dalam perancangan jangka panjang.",
+  "hook_glimpse": "Ini hanyalah sekilas pandang. Laporan penuh anda akan mendedahkan yang tidak diketahui – cara-cara mengejutkan sifat-sifat ini berinteraksi untuk membentuk kerjaya, perhubungan, dan dunia peribadi anda.",
+  "hook_unlock": "Buka potensi penuh anda. Temui diri anda yang sebenar.",
+  "chart_title": "Keputusan Personaliti HEXACO",
+  "score_label": "Skor",
+  "response_options": {
+    "strongly_disagree": "Sangat Tidak Bersetuju",
+    "disagree": "Tidak Bersetuju",
+    "neutral": "Neutral",
+    "agree": "Bersetuju",
+    "strongly_agree": "Sangat Bersetuju"
+  }
+}
