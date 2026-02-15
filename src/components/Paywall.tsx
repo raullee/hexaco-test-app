@@ -94,11 +94,17 @@ const Paywall: React.FC<Props> = ({ answers, testDuration }) => {
   const handlePurchase = async () => {
     setIsProcessing(true);
     try {
-      const stripe = await stripePromise;
-      if (!stripe) throw new Error('Stripe failed to load');
-      // Demo mode — simulate payment
-      await new Promise(r => setTimeout(r, 2000));
-      setUnlocked(true);
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tier: selectedTier }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error(data.error || 'Failed to create checkout');
+      }
     } catch (error) {
       console.error('Payment error:', error);
       alert('Payment failed. Please try again.');
