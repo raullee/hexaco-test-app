@@ -4,9 +4,9 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!.trim());
 
 const priceMap: Record<string, string> = {
-  basic: process.env.HEXACO_BASIC_PRICE_ID || "",
-  premium: process.env.HEXACO_PREMIUM_PRICE_ID || "",
-  dual: process.env.HEXACO_DUAL_PRICE_ID || "",
+  basic: (process.env.HEXACO_BASIC_PRICE_ID || "").trim(),
+  premium: (process.env.HEXACO_PREMIUM_PRICE_ID || "").trim(),
+  dual: (process.env.HEXACO_DUAL_PRICE_ID || "").trim(),
 };
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
