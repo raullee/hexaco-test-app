@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { loadStripe } from '@stripe/stripe-js';
 import { ArrowLeft, Lock, Shield, Zap, FileText, Check, Clock } from 'lucide-react';
 import PremiumResults from './PremiumResults';
 import { hexacoQuestions } from '../questions';
-
-const stripePromise = loadStripe(
-  (import.meta as any).env?.VITE_STRIPE_PUBLISHABLE_KEY || 'pk_test_PLACEHOLDER'
-);
 
 const ARCHETYPE_URL = 'https://archetype-protocol.vercel.app';
 
@@ -30,7 +25,10 @@ interface Props {
 const Paywall: React.FC<Props> = ({ answers, testDuration }) => {
   const [countdown, setCountdown] = useState(24 * 60 * 60);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [unlocked, setUnlocked] = useState(false);
+  const [unlocked, setUnlocked] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('paid') === 'true';
+  });
   const [selectedTier, setSelectedTier] = useState<'basic' | 'premium' | 'dual'>('premium');
   const [socialIdx, setSocialIdx] = useState(0);
   const [showProof, setShowProof] = useState(false);
