@@ -25,7 +25,8 @@ interface Props {
 const Paywall: React.FC<Props> = ({ answers, testDuration }) => {
   const [countdown, setCountdown] = useState(24 * 60 * 60);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [unlocked, setUnlocked] = useState(() => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [unlocked, _setUnlocked] = useState(() => {
     const params = new URLSearchParams(window.location.search);
     return params.get('paid') === 'true';
   });
